@@ -1,0 +1,433 @@
+/* ----------------------------------------------------------- */
+/* Basic */
+/* ----------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size:1.6rem; */
+  line-height: 1.7;
+  color: white;
+  /* padding: 3rem;  */
+}
+/* ----------------------------------------------------------- */
+/* REUSABLE */
+/* ----------------------------------------------------------- */
+
+/*------ Paragraphs------- */
+.paragraph {
+  color: #777;
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+/*------ Buttons------- */
+.nav-btn {
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 4.5rem;
+  margin-top: 4rem;
+}
+.nav-btn::before {
+  transform: translateY(-1.5rem);
+}
+.nav-btn::before,
+.nav-btn::after {
+  background-color: #fff;
+  height: 2px;
+  width: 4.5rem;
+  content: "";
+  display: block;
+}
+.nav-btn::after {
+  transform: translateY(1.3rem);
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.btn--white {
+  background-color: #c69963;
+  color: #fff;
+}
+.btn--white::after {
+  background-color: #c69963;
+}
+
+.btn--green {
+  background-color: #7ed56f;
+  color: #fff;
+}
+.btn--green::after {
+  background-color: #7ed56f;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn--animated {
+  animation: moveInButton 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.btn-text:link,
+.btn-text:visited {
+  font-size: 1.7rem;
+  color: #c69963;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #c69963;
+  padding: 3px;
+  transition: all 0.2s;
+}
+
+.btn-text:hover {
+  background-color: #c69963;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.btn-text:active {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0);
+}
+
+/* ---------grid--------- */
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class^="col-"] {
+  float: left;
+}
+.row [class^="col-"]:not(:last-child) {
+  margin-right: 6rem;
+}
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+.row .col-2-of-3 {
+  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
+}
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4);
+}
+.row .col-2-of-4 {
+  width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
+}
+.row .col-3-of-4 {
+  width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
+}
+
+/* -----Headings------ */
+
+.heading-tertiary__black {
+  color: #777;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.heading-tertiary {
+  color: #c69963;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-top: 8rem;
+  letter-spacing: 0.2rem;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  color: #54483a;
+  font-weight: 400;
+}
+.heading-secondary__white {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 400;
+}
+.heading-secondary::after {
+  display: block;
+  height: 2px;
+  background-color: #c69963;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+}
+.heading-tertiary__gold{
+  color: #c69963;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-top:0.5rem;
+  letter-spacing: 0.2rem;
+}
+
+/* ----- Reusable margins------ */
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem;
+}
+
+.u-margin-top-huge {
+  margin-top: 14rem;
+}
+
+/* ----------------------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------------------- */
+.header {
+  background-image: linear-gradient(to right, #1e2938ec, #1e2938e3),
+    url("./img/image-hero2.png");
+  height: 80vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  /* clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); */
+  position: relative;
+  background-attachment: fixed;
+}
+.after-header {
+  background: whhite;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  height: 12rem;
+  position: absolute;
+  top: 4rem;
+  left: 12rem;
+  font-size: 2rem;
+  color: #c69963;
+}
+
+.header__text-box {
+  /* position: absolute;
+        top: 50%;
+        left: 16%;
+        transform: translate(-50%, -50%); */
+  /* text-align: center;  */
+  align-self: center;
+  justify-self: start;
+  margin-left: 18rem;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+
+  padding: 5px 25px;
+  margin-top: 15px;
+}
+.hero__video {
+  height: 50rem;
+  margin-left: 5rem;
+}
+.bg-video__content {
+  height: 74%;
+  width: 30rem;
+}
+
+.training-session {
+  height: 100%;
+  background-color: #101d2c;
+  width: 25%;
+}
+
+.sidebar {
+  background-color: #c69963;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  position: fixed;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  background-color: #485460;
+  height: 8rem;
+  width: 100%;
+}
+.nav {
+  margin: 10px 10px 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+/* ----------------------------------------------------------- */
+/* 
+section About us*/
+/* ----------------------------------------------------------- */
+
+.about-us {
+  text-align: center;
+}
+.composition {
+  position: relative;
+}
+.composition__photo {
+  width: 75%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 2rem;
+}
+.composition__photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+.composition__photo--p2 {
+  right: -22%;
+    top: 6rem;
+}
+.composition__photo--p3 {
+  left: 15%;
+  top: 15.5rem;
+}
+.composition__photo:hover {
+  outline: 1.5rem solid #c69963;
+  transform: scale(1.05) translate-Y(-0.5rem);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.95);
+}
+
+/* ----------------------------------------------------------- */
+/* 
+section features */
+/* ----------------------------------------------------------- */
+
+.section-features {
+  padding: 10rem;
+  background-image: linear-gradient(to right, #1e2938a1, #1e2938b4),
+    url("./img/feature-image.jpg");
+  background-size: cover;
+  text-align: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4 rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+  height: 36rem;
+}
+.feature-box__icon {
+  font-size: 6rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #c69963, #c69963);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
