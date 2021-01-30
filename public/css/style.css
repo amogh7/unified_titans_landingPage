@@ -345,7 +345,7 @@ body {
   width: 8rem;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: -webkit-fill-available;
   position: fixed;
   z-index: 5;
 }
