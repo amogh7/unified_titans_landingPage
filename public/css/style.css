@@ -282,7 +282,6 @@ body {
   background-image: linear-gradient(to right, #1e2938ec, #1e2938e3),
     url("./img/image-hero2.png");
   height: 80vh;
-  width: 100vw;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
