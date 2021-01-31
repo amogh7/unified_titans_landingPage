@@ -17,13 +17,6 @@ body {
   color: white;
   /* padding: 3rem;  */
 }
-
-/* .container{
-  display: grid;
-    grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-    grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-} */
-
 /* ----------------------------------------------------------- */
 /* REUSABLE */
 /* ----------------------------------------------------------- */
@@ -72,8 +65,8 @@ body {
 }
 
 .btn--white {
-  background-color: #c69963;
-  color: #fff;
+  background-color:#f5f6fa;
+  color: #c23616;
 }
 .btn--white::after {
   background-color: #c69963;
@@ -282,6 +275,7 @@ body {
   background-image: linear-gradient(to right, #1e2938ec, #1e2938e3),
     url("./img/image-hero2.png");
   height: 80vh;
+  width: 98.9vw;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -326,7 +320,6 @@ body {
 }
 .hero__video {
   height: 50rem;
-  margin-left: 5rem;
 }
 .bg-video__content {
   height: 74%;
@@ -334,9 +327,13 @@ body {
 }
 
 .training-session {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   background-color: #101d2c;
   width: 25%;
+  justify-content: center;
+  text-align: center;
 }
 
 .sidebar {
@@ -344,9 +341,8 @@ body {
   width: 8rem;
   display: flex;
   justify-content: center;
-  height: -webkit-fill-available;
+  height: 100vh;
   position: fixed;
-  z-index: 5;
 }
 
 .nav-links {
@@ -437,4 +433,61 @@ section features */
 }
 .feature-box:hover {
   transform: translateY(-1.5rem) scale(1.03);
+}
+
+/* ----------------------------------------------------------- */
+/* 
+follow us div */
+/* ----------------------------------------------------------- */
+.follow-us{
+background-color: #1C1E1E;
+display: flex;
+padding-left: 20rem;
+padding-right: 10rem;
+align-items: center;
+height: 7rem;
+justify-content: space-between;
+}
+.follow-text{
+font-size: 2rem;
+margin-left:auto ;
+margin-right
+:2rem ;
+}
+.contact-info{
+margin-left: auto;
+}
+.contact-info p{
+  font-size: 1.6rem;
+}
+.follow-icons{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-right:1.5rem ;
+}
+.follow-icon-insta{
+  font-size: 2.5rem;
+  color: red;
+  
+}
+.follow-icon-facebook{
+  font-size: 2.5rem;
+  
+}
+.follow-icon-youtube{
+  font-size: 2.5rem;
+  color: red;
+  
+  
+}
+.icon{
+  display: inline-block;
+  padding:0.5rem;
+  background-color: white;
+  margin: 0 1rem;
+  width: 4rem;
+  text-align: center;
+
+  
 }
