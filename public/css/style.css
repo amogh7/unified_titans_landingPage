@@ -29,28 +29,6 @@ body {
 }
 
 /*------ Buttons------- */
-.nav-btn {
-  border: none;
-  border-radius: 0;
-  background-color: #fff;
-  height: 2px;
-  width: 4.5rem;
-  margin-top: 4rem;
-}
-.nav-btn::before {
-  transform: translateY(-1.5rem);
-}
-.nav-btn::before,
-.nav-btn::after {
-  background-color: #fff;
-  height: 2px;
-  width: 4.5rem;
-  content: "";
-  display: block;
-}
-.nav-btn::after {
-  transform: translateY(1.3rem);
-}
 
 .btn:link,
 .btn:visited {
@@ -276,6 +254,105 @@ body {
 /* ----------------------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------------------- */
+.nav-btn__links{
+  margin-top: 2.5rem;
+  margin-right: 6rem;
+  height: 50rem;
+  background-color: tomato;
+  cursor: pointer;
+  position: relative;
+}
+.navigation__button:hover .nav-btn::before{
+  top: -1.1rem;
+}
+.navigation__button:hover .nav-btn::after{
+  top: 1.1rem;
+}
+.nav-btn {
+  position: relative;
+    background-color: white;
+    height: 2px;
+    width: 4rem;
+    display: inline-block;
+   text-align: center;
+   margin-top: 3rem;
+   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.navigation__button{
+  position: absolute;
+  z-index: 200;
+  cursor: pointer;
+  height: 4rem;
+  margin-left: 1rem;
+  
+}
+.nav:hover{
+  color: #c23616;
+}
+
+#navi-toggle{
+  display: none;
+}
+.nav-btn::before,
+.nav-btn::after {
+ 
+  background-color: white;
+  height: 2px;
+  width: 4rem;
+  display: inline-block;
+  content: ""; 
+  position: absolute;
+  left:0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.nav-btn::after {
+  top: 1rem;
+}
+.nav-btn::before {
+  top: -1rem;
+ }
+
+.nav-checkbox:checked + .navigation__button .nav-btn{
+  background-color: transparent;
+}
+.nav-checkbox:checked + .navigation__button .nav-btn::before{
+  transform: rotate(45deg);
+  top: 0;
+}
+.nav-checkbox:checked + .navigation__button .nav-btn::after{
+  transform: rotate(-45deg);
+  top: 0;
+}
+.nav-checkbox:checked ~ .navbar-dropdown{
+opacity: 1;
+width:26rem;
+}
+.navbar-dropdown{
+  background-image: linear-gradient(to right, rgba(16, 29, 44, 0.842), rgba(16, 29, 44, 0.685));
+  z-index: 10;
+  width:0;
+  opacity: 0;
+  height: 40rem;
+  position: absolute;
+  padding-top: 1rem;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+/* .show{
+  width: 26rem; 
+  opacity: 1;
+  animation:nav .5s ease-out;
+  
+  } */
+.nav-list{
+}
+.link{
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+}
+
+
 .header {
   background-image: linear-gradient(to right, #1e2938ec, #1e2938e3),
     url("./img/image-hero2.png");
@@ -349,6 +426,7 @@ body {
   justify-content: center;
   height: 100vh;
   position: fixed;
+  z-index: 7;
 }
 
 .nav-links {
@@ -568,7 +646,7 @@ section team */
   font-size: 1.6rem;
 }
 .achievements__image-national{
- margin-left:15rem;
+ margin-left:10rem;
  margin-bottom: 5rem;
 }
 
