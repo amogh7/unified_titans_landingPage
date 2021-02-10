@@ -51,11 +51,13 @@ body {
 }
 
 .btn--green {
-  background-color: #7ed56f;
+  background-color: #6D214F ;
   color: #fff;
+  border-radius: 2.5rem;
 }
 .btn--green::after {
-  background-color: #7ed56f;
+  background-color: #6D214F;
+  border-radius: 2.5rem;
 }
 
 .btn:hover {
@@ -758,4 +760,57 @@ a{
 
 .text-value a{
   color:white;
+}
+
+/* ----------------------------------------------------------- */
+/* Contact us */
+/* ----------------------------------------------------------- */
+.contact-heading{
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.contact{
+width: 60rem;
+margin: auto;
+margin-top: 5rem;
+}
+#contact-us{
+  background-color: #212529;
+  height: 100vh;
+  overflow:auto;
+}
+.header__logo{
+  width: 17rem;;
+}
+.text{
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  height: 54px;
+  margin: 20px auto;
+  background-color: #F1EDED;
+  width: 600px;
+  padding: 18px;
+}
+.area{
+    height:8rem;
+}
+.send-mes{
+  text-align: left;
+}
+.send{
+  padding: 10px;
+  height: 4rem;
+}
+
+
+
+.contact-form{
+    text-align: center;
+}
+.paragraph_contact{
+  color: #afa8a8;
+  font-size: 2rem;
+  text-align: left;
 }
