@@ -814,3 +814,57 @@ margin-top: 5rem;
   font-size: 2rem;
   text-align: left;
 }
+/* ----------------------------------------------------------- */
+/* locations */
+/* ----------------------------------------------------------- */
+.locations{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+
+}
+.location{
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  height:62rem;
+  margin-top:8rem;
+}
+.location:last-child{
+  margin-bottom: 2rem;
+}
+.location_heading{
+margin-bottom: 4rem;
+text-align: center;
+margin-top: 2rem;
+font-size: 2.6rem;
+}
+.location__info{
+  display: flex;
+  justify-content: space-around;
+  width: 120rem;
+  color: #54483a;
+}
+.location_paragraph{
+  font-size: 1.5rem;
+  display: inline-block;
+}
+.location__address{
+  width:50rem;
+  display: flex;
+  border-bottom: 1px solid #c69963;
+  height: 6rem;
+  margin-top: 3rem;
+}
+
+.location_icon{
+  font-size: 2rem;
+  padding-top: 0.5rem;
+  margin-right: 2rem;
+}
+.location__para{
+  display: flex;
+}
+.location_link{
+  color:#54483a;
+}
