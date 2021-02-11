@@ -22,6 +22,10 @@ app.get('/locations',function(req,res){
     res.render("locations");
     // res.redirect("/index.html");
 });
+app.get('/gallery',function(req,res){
+    res.render("gallery");
+    // res.redirect("/index.html");
+});
 
 let port=process.env.PORT||3000;
 
