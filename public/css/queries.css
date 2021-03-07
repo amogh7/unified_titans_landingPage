@@ -305,6 +305,32 @@ font-size: 1.2rem;
     .row {
         width: 100%;
     }
+    .about-us {
+        padding-left: 5rem;
+        margin-top: 3rem;
+    }
+    .section-features {
+        margin-top: 3rem;
+    }
+    .feature_row{
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+    }
+    .team__div {
+        margin-bottom: -7rem;
+        margin-top: 3rem;
+      
+    }
+    .achievements__internationals {
+        margin-bottom: -6rem;
+        margin-top: -3rem;
+    }
+    .achievements__nat-div{
+        margin-top: -3rem;
+    }
+    .achievements__int-div{
+        margin-top: -3rem;
+    }
 }
 @media only screen and (max-width: 890px){
     .feature-box {
@@ -335,6 +361,29 @@ font-size: 1.2rem;
     .achievements__image {
         margin: 0 3rem;
     }
+    .photo_heading {
+        margin-top: 10rem;
+    }
+    .contact-heading {
+        margin-top: 14rem;
+    }
+    .location__info {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .location_heading{
+        font-size: 2.5rem;
+
+    }
+    .location {
+        height: auto;
+        margin-top: 15rem;
+       
+    }
+    .location__map{
+        margin-top: 2rem;
+    }
   
     
 }
@@ -344,7 +393,7 @@ font-size: 1.2rem;
     }
       
       .heading-secondary {
-        font-size: 3.4rem;
+        font-size: 3rem;
       }
      
       .heading-primary--main {
@@ -363,6 +412,7 @@ font-size: 1.2rem;
     }
     .about-us {
         padding-left: 5rem;
+        margin-top: 3rem;
     }
     .follow-us {
         
@@ -425,6 +475,18 @@ font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
+.contact {
+    padding: 2rem;
+    width: 100%;
+ }
+ .text {
+ 
+     width: 100%;
+     
+ }
+ .map{
+     width: 100%;
+ }
 }
 
 @media only screen and (max-width: 501px){
@@ -455,6 +517,16 @@ font-size: 1.2rem;
         margin: auto;
         margin-top: 2rem;
     }
+    .contact {
+        padding: 2rem;
+        width: 100%;
+     }
+     .text {
+     
+         width: 100%;
+         
+     }
+    
  
 
 }
@@ -474,5 +546,32 @@ font-size: 1.2rem;
         right: -10%;
         top: -2rem;
     }
+    .achievements__image2 {
+        height: 10rem;
+    }
+    .location_heading{
+        font-size: 2rem;
 
+    }
+    .loaction_para{
+        width: 100%;
+    }
+    .location__address {
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 360px){
+    .feature-box {
+        font-size: 1.4rem;
+        width: 25rem;
+        height: 25.1rem;
+        margin: auto;}
+        .follow-us {
+         overflow: hidden;
+        }
+        .header__text-box {
+            transform: translate(-60%,80%);
+        }
+    
 }
