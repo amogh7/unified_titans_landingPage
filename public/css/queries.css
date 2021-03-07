@@ -1,0 +1,413 @@
+@media only screen and (max-width: 1330px){
+.about-us{padding-left: 10rem;
+
+}
+.achievements__image-national {
+    margin-left: 4rem;
+    margin-bottom: 5rem;
+}
+.bg-video__content {
+    height: 67%;
+    width: 27rem;
+}
+}
+
+@media only screen and (max-width: 1215px){
+body{
+font-size: 1.4rem;
+}
+.heading-primary--main {
+    font-size: 4.2rem;
+}
+.heading-primary--sub {
+    font-size: 2.8rem;
+}
+.bg-video__content {
+    height: 67%;
+    width: 25rem;
+}
+.composition__photo {
+    width: 60%;
+}
+.composition__photo--p2 {
+    right: 10%;
+}
+.composition__photo--p3 {
+    left: 10%;
+    top: 10.5rem;
+}
+.feature-box__icon {
+    font-size: 5rem;}
+    .feature-box {
+        font-size: 1.4rem;
+        width:20rem ;
+        height: 34rem;
+    }
+    .achievements__image-national {
+        margin-left: 3rem;
+        margin-bottom: 5rem;
+        
+    }
+   .achievements__image2{
+       height: 16rem;
+   }
+   .team__box{
+
+   }
+   .team__coach-box--img {
+    height: 27rem;
+   }
+   .team__info-div {
+    width: 23.5rem;
+}
+.heading-tertiary__gold {
+font-size:1.3rem ;
+}
+.paragraph_about-coach {
+    font-size: 1.4rem;
+}
+.paragraph {
+    font-size: 1.4rem;
+}
+}
+
+@media only screen and (max-width: 1015px){
+    body{
+        font-size: 1.3rem;
+    }
+    .header {
+
+    }
+    .sidebar{
+        width: 100%;
+        height: 6rem;
+        justify-content:flex-start ;
+    }
+    .nav-btn__links {
+        margin-top: 0rem;
+        margin-right: 6rem;
+        height: 10rem;
+       
+    }
+    .header__logo {
+     
+        top: 9rem;
+        left: 12rem;
+      
+    }
+    .bg-video__content {
+        height: 67%;
+        width: 20rem;
+    }
+    .training-session {
+        padding-top: 3rem;
+    }
+    .contact-info {
+        margin-left: -14rem;
+    }
+    .section-features {
+        padding: 5rem;
+    }
+    .section-team {
+        padding-left: 5rem;
+    }
+    .team__coach-box--img {
+        height: 25.2rem;
+       }
+       .team__info-div {
+        width: 22rem;
+    }
+    .heading-tertiary__gold {
+    font-size:1.3rem ;
+    }
+    .paragraph_about-coach {
+        font-size: 1.3rem;
+    }
+    .paragraph {
+        font-size: 1.3rem;
+    }
+    .achievements__nat-div {
+        margin-left: 0rem;
+    }
+    .composition__photo--p2 {
+        right: 10%;
+        top: 2rem;
+    }
+    .composition__photo--p3 {
+        left: 10%;
+        top: 6rem;
+    }
+    .story {
+        width:83%;
+    }
+     
+}
+
+@media only screen and (max-width: 940px){
+    body{
+        font-size: 1.2rem;
+    }
+      
+      .heading-secondary {
+        font-size: 3.6rem;
+      }
+     
+      .heading-primary--main {
+        font-size: 4rem; 
+      }
+      
+      .heading-primary--sub {
+        font-size: 2.5rem;
+      }
+
+    .composition__photo--p2 {
+        right: 10%;
+        top: 2rem;
+    }
+    .composition__photo--p3 {
+        left: 10%;
+        top: 6rem;
+    }
+    .section-features {
+        padding: 2rem;
+        padding-right: 5rem;
+    }
+    .section-team {
+        padding-left: 3rem;
+    }
+    .btn--join {
+        width: 16rem;
+        flex: 1 0 1;
+        height: 6rem;
+}
+.follow-text {
+    font-size: 1.4rem;
+    display: block;
+    flex: 1 0 4%;
+}
+.follow-us {
+ flex-wrap: wrap;
+ height: 13rem;
+}
+.contact-info {
+    margin-left: -19rem;
+    font-size: 1.4rem;
+    
+    flex: 1 0 133%;
+
+}
+.follow-icons {
+    flex: 1 0 4%;
+}
+.achievements__image2 {
+    height: 14rem;
+}
+.achievements__image-int {
+    height: 17rem;
+}
+.achievements__nat-div {
+    margin-left: -4rem;
+}
+.story {
+    width:88%;
+}
+.story__shape {
+    width: 13rem;
+    height: 13rem;
+
+}
+.story__text {
+font-size: 1.2rem;
+
+}
+.story {
+    width: 88%;
+    height: 25rem;
+}
+
+}
+@media only screen and (max-width: 830px){
+    .header {
+        flex-direction: column;
+        height:100vh;
+    }
+    .header__text-box {
+        margin-top: 24rem;
+        margin-bottom: 22.3rem;
+        margin-right: 14rem;
+    }
+    .training-session{
+        width: 100%;
+        height: 25rem;
+        margin-bottom: 2rem;
+    }
+    .follow-us{
+        margin-top: 24rem;
+    }
+    .heading-video{
+        margin-top: 0.2rem;
+    }
+    .bg-video__content {
+        height: 100%;
+        width: 28rem;
+    }
+    .sidebar {
+        width: 100%;
+        height: 6rem;
+        justify-content: flex-start;
+    }
+    .row .col-1-of-2{
+        width: 100%;
+        padding-right: 5rem;
+    }
+    .about-us{
+        margin-top:5rem ;
+        
+    }
+    .heading-tertiary__black {
+        margin-top: 2rem;
+    }
+    .composition {
+        height: 34rem;
+        margin-top: 8rem;
+    }
+    .composition__photo--p2 {
+        right: 7%;
+        top: -2rem;
+    }
+    .composition__photo--p3 {
+        left: 25%;
+        top: 16rem;
+    }
+    
+    
+    .composition__photo {
+        width: 44%;
+    }
+    .achievements__image2 {
+        height: 13rem;
+    }
+    .story__shape {
+        width: 12rem;
+        height: 12rem;
+    
+    }
+    .story__text {
+    font-size: 1.2rem;
+    
+    }
+    .story {
+        width:88%;
+        height: 25rem;
+        
+    }
+    .about-us {
+        padding-left: 5rem;
+    }
+    .row {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 890px){
+    .feature-box {
+        font-size: 1.4rem;
+        width: 17rem;
+        height: 31.1rem;
+    }
+    .feature-box__icon {
+        font-size: 3rem;
+    }
+    .heading-tertiary__gold {
+        font-size: 1rem;
+    }
+    .team__coach-box--img {
+        height:21.2rem;
+    }
+    .team__info-div {
+        width: 18.2rem;
+        height: 13rem;
+        padding: 0.5rem;
+    }
+    .paragraph_about-coach {
+        color: #c23616;
+        font-size: 1.4rem;
+        margin: 0;
+        
+    }
+    .achievements__image {
+        margin: 0 3rem;
+    }
+    
+}
+@media only screen and (max-width: 764px){
+    body{
+        font-size: 1rem;
+    }
+      
+      .heading-secondary {
+        font-size: 3.4rem;
+      }
+     
+      .heading-primary--main {
+        font-size: 3.6rem; 
+      }
+      
+      .heading-primary--sub {
+        font-size: 2.2rem;
+      }
+      .header__text-box {
+        width:35rem ;
+    }
+    .header__logo {
+        top: 9rem;
+        left: 5rem;
+    }
+    .about-us {
+        padding-left: 5rem;
+    }
+    .follow-us {
+        margin-top: 22rem;
+        flex-direction: column;
+        padding-top: 2rem;
+        height: 21rem;
+        padding-bottom: 2rem;
+    }
+    .btn--join {
+        
+}
+.follow-text {
+  margin-left: -2rem;
+}
+
+.contact-info {
+    
+
+}
+.follow-icons {
+    flex: 1 0 4%;
+    margin-top: -10rem;
+}
+
+}
+
+@media only screen and (max-width: 501px){
+
+    body{
+        font-size: 1rem;
+    }
+      
+      .heading-secondary {
+        font-size: 3.4rem;
+      }
+     
+      .heading-primary--main {
+        font-size: 3.7rem; 
+      }
+      
+      .heading-primary--sub {
+        font-size: 2.4rem;
+      }
+   
+
+
+}
