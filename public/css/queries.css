@@ -335,6 +335,7 @@ font-size: 1.2rem;
     .achievements__image {
         margin: 0 3rem;
     }
+  
     
 }
 @media only screen and (max-width: 769px){
@@ -388,6 +389,41 @@ font-size: 1.2rem;
 .header__text-box {
     transform: translate(-12%,80%);
 }
+.row .col-1-of-4{
+    width: 100%;
+    margin-bottom: 2rem;
+    
+}
+.feature-box {
+    font-size: 1.4rem;
+    width: 33rem;
+    height: 25.1rem;
+    margin: auto;
+}
+.feature-box__icon {
+    font-size: 4rem;
+}
+.team__div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.team__box{
+    margin: auto;
+}
+.achievements__int-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .achievements__image {
+    margin:auto;
+    margin-bottom: 3rem;
+}
+.achievements__image-national {
+    margin: auto;
+    margin-bottom: 2rem;
+}
 
 }
 
@@ -412,7 +448,24 @@ font-size: 1.2rem;
       .header__text-box {
         transform: translate(-37%,80%);
     }
-   
+ 
 
+}
+@media only screen and (max-width: 561px){
+    .composition__photo--p3 {
+        left: 25%;
+        top: 11rem;
+    }
+    .composition__photo {
+        width: 54%;
+    }
+    .composition__photo--p2 {
+        right: 10%;
+        top: 2rem;
+    }
+    .composition__photo--p2 {
+        right: -10%;
+        top: -2rem;
+    }
 
 }
