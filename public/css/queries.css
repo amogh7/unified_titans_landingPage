@@ -448,6 +448,13 @@ font-size: 1.2rem;
       .header__text-box {
         transform: translate(-37%,80%);
     }
+    .footer-parent {
+      flex-direction: column;
+    }
+    .social-link{
+        margin: auto;
+        margin-top: 2rem;
+    }
  
 
 }
