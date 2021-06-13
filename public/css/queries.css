@@ -164,40 +164,50 @@ font-size:1.3rem ;
         right: 10%;
         top: 2rem;
     }
+
     .composition__photo--p3 {
         left: 10%;
         top: 6rem;
     }
+    
     .section-features {
         padding: 2rem;
         padding-right: 5rem;
     }
+    
     .section-team {
         padding-left: 3rem;
     }
+    
     .btn--join {
         width: 16rem;
-        flex: 1 0 1;
+       
         height: 6rem;
+        margin-bottom: 2rem;
 }
-.follow-text {
-    font-size: 1.4rem;
-    display: block;
-    flex: 1 0 4%;
-}
-.follow-us {
- flex-wrap: wrap;
- height: 13rem;
-}
-.contact-info {
-    margin-left: -19rem;
-    font-size: 1.4rem;
-    
-    flex: 1 0 133%;
 
+   .follow-text {
+       margin-left: -5rem;
+   }
+
+
+.follow-us{
+ flex-direction: column;
+ height: 28rem;
+ padding-left: 1rem;
+ padding-right: 0rem;
 }
+
+
+.contact-info {
+   margin-right: 25rem;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+
 .follow-icons {
-    flex: 1 0 4%;
+   
 }
 .achievements__image2 {
     height: 14rem;
@@ -205,12 +215,15 @@ font-size:1.3rem ;
 .achievements__image-int {
     height: 17rem;
 }
+
 .achievements__nat-div {
     margin-left: -4rem;
 }
+
 .story {
     width:88%;
 }
+
 .story__shape {
     width: 13rem;
     height: 13rem;
@@ -218,8 +231,8 @@ font-size:1.3rem ;
 }
 .story__text {
 font-size: 1.2rem;
-
 }
+
 .story {
     width: 88%;
     height: 25rem;
@@ -414,27 +427,18 @@ font-size: 1.2rem;
         padding-left: 5rem;
         margin-top: 3rem;
     }
-    .follow-us {
-        
-        flex-direction: column;
-        padding-top: 2rem;
-        height: 21rem;
-        padding-bottom: 2rem;
-    }
-    .btn--join {
-        
-}
-.follow-text {
-  margin-left: -2rem;
+   
+   
+    .follow-text {
+           
 }
 
 .contact-info {
-    
+    margin-left: 5rem;
 
 }
 .follow-icons {
-    flex: 1 0 4%;
-    margin-top: -10rem;
+  
 }
 .header__text-box {
     transform: translate(-12%,80%);
@@ -508,7 +512,9 @@ font-size: 1.2rem;
       }
 
       .header__text-box {
-        transform: translate(-37%,80%);
+        transform: translate(-50%,80%);
+        width: 85%;
+
     }
     .footer-parent {
       flex-direction: column;
@@ -526,21 +532,22 @@ font-size: 1.2rem;
          width: 100%;
          
      }
-    
+     
  
 
 }
 @media only screen and (max-width: 561px){
     .composition__photo--p3 {
         left: 25%;
-        top: 11rem;
+        top: 13rem;
     }
     .composition__photo {
         width: 54%;
+        height: 37%;
     }
-    .composition__photo--p2 {
+    .composition__photo--p1 {
         right: 10%;
-        top: 2rem;
+        top: -2rem;
     }
     .composition__photo--p2 {
         right: -10%;
@@ -561,21 +568,55 @@ font-size: 1.2rem;
     }
 
 }
-@media only screen and (max-width: 360px){
-    .feature-box {
-        font-size: 1.4rem;
-        width: 25rem;
-        height: 25.1rem;
-        margin: auto;}
-        .follow-us {
-         overflow: hidden;
-        }
-        .header__text-box {
-            transform: translate(-60%,80%);
-        }
-    
+
+@media only screen and (max-width: 371px){
+.header__text-box {
+    transform: translate(-50%,80%);
+    width: 80%;  
 }
-@media only screen and (max-width: 37.5em){
+
+body{
+    font-size: 0.9rem;
+}
+  
+  .heading-secondary {
+    font-size: 2.2rem;
+  }
+ 
+  .heading-primary--main {
+    font-size: 3.1rem; 
+  }
+  
+  .heading-primary--sub {
+    font-size: 2.4rem;
+  }
+
+  .contact-info {
+    margin-left: 25rem;
+}
+.composition__photo--p3 {
+    left: 25%;
+    top: 10rem;
+}
+.composition__photo {
+    width: 56%;
+    height: 38%;
+}
+.composition__photo--p1 {
+    right: 10%;
+    top: -5rem;
+}
+.composition__photo--p2 {
+    right: -14%;
+    top: -5rem;
+}
+.about-us {
+    padding-left: 2rem;
+    margin-top: 3rem;
+}
+
+}
+/* @media only screen and (max-width: 37.5em){
     .story {
         -webkit-transform: skewX(0);
         transform: skewX(0);
@@ -589,7 +630,7 @@ font-size: 1.2rem;
         -webkit-transform: skewX(0);
         transform: skewX(0);
     }
-}
+} */
 
 
 @media only screen and (max-width: 56.25em){

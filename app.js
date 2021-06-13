@@ -1,5 +1,7 @@
 let express=require("express");
 let app=express();
+const nodemailer=require('nodemailer');
+const transporter=nodemailer.createTransport()
 
 let path=require("path");
 // view engine setup
