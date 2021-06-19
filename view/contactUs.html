@@ -32,7 +32,7 @@
           <li class="link"> <a href="/locations" class="nav">OUR LOCATIONS</a> </li>
           <li class="link"><a href="/gallery" class="nav">GALLERY</a></li>
       
-          <li class="link"><a href=" " class="nav">NEWS</a></li>
+          <li class="link"><a href="" class="nav">NEWS</a></li>
         </ul> 
     </div>  
 </div> 
@@ -49,28 +49,25 @@
           <div class="contact-form">
             <div class="name">
               <p class="paragraph_contact">Name</p>
-              <input class="text" type="text" placeholder="Your Name">
+              <input id="Contact_name" class="text" type="text" placeholder="Your Name">
             </div>
             <div class="email">
               <p class="paragraph_contact">Email</p>
-              <input class="text" type="text" placeholder="Your Email">
+              <input id="Contact_email" class="text" type="text" placeholder="Your Email">
             </div>
             <div class="how">
-              <p class="paragraph_contact">How did you find us</p>
-              <select class="text" name="" id="">
-                <option value="">
-                  friends
-                </option>
-                <option value="">search</option>
-                <option value="">advertsiment</option>
-                <option value="">other</option>
+              <p class="paragraph_contact">Select your Reason</p>
+              <select class="text" name="" id="Contact_reason">
+                <option value="Book a class">Book a class</option>
+                <option value="Some Other Enquiry">Some Other Enquiry</option>
+                
               </select>
             </div>
             <div class="drop">
               <p class="paragraph_contact">Drop us a line</p>
-              <textarea class="text area" name="" id="" placeholder="Your Message"></textarea>
+              <textarea class="text area" name="" id="Contact_line" placeholder="Your Message"></textarea>
             </div>
-            <a href="" class="btn btn--green btn--animated">Send Message</a>
+            <a href="#" id="btnMail"class="btn btn--green btn--animated">Send Message</a>
     
           </div>
     
@@ -80,5 +77,5 @@
     
       </section>
 </body>
-<!-- <script src="js/script.js"></script> -->
+<script src="js/script.js"></script>
 </html>
