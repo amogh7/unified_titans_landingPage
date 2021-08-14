@@ -21,6 +21,7 @@ let message={};
      
 
            message.from="amoghsachdeva_ramesh@srmuniv.edu.in";
+           message.for="";
            message.to=email.value;
            message.subject=reason.value;
            message.text=query.value;

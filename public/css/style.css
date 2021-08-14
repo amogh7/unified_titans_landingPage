@@ -693,16 +693,16 @@ section Achievements */
  
 }
 .image-div{
-  text-align: center;
-  width: 40%;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
   
 }
 
 .achievements__int-div{
     display:flex;
     flex-wrap: wrap;
-    margin-left: 27rem;
-
+    
     
 }
 .achievements__int-div > div{

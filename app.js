@@ -22,7 +22,7 @@ async function sendEmail(message) {
         from: message.from, // sender address
         to: message.to, // list of receivers
         subject: message.subject , // Subject line
-        text:`sent by ${message.name} and he wants to know this ${message.text}` , // plain text body
+        text:`sent by ${message.name} and he wants to know this-- ${message.text} , his email is ${message.for} and phone number is ${message.phone} ` , // plain text body
       });
       return res;
     } catch (error) {
